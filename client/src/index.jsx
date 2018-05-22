@@ -101,8 +101,7 @@ class FormDetails extends React.Component {
               <Input s={6} label="Email" onChange={(event)=>{this.setState({email: event.target.value})}}/>
               <Input s={6} label="Phone Number" onChange={(event)=>{this.setState({phone: event.target.value})}}/>
               <Input s={6} label="Type of Event" onChange={(event)=>{this.setState({type: event.target.value})}}/>
-              <Input s={6} label="Theme of Event" onChange={(event)=>{this.setState({theme: event.target.value})}}/>
-              <Input s={6} label="City of Event" onChange={(event)=>{this.setState({city: event.target.value})}}/>
+       
               <Input s={6} type='select' defaultValue='1' onChange ={(event)=> this.changeTravelFee(event.target.value)}>
                 <option value='0'>City Of Event </option>
                 <option value='1' onClick={()=>{e.preventDefault();this.setState({travelFee: 10}); } }>Fremont </option>
